@@ -1,15 +1,18 @@
-package com.example.glitchbusters.model;
+package com.example.glitchbusters.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
-@Table(name = "nanotek")
-@NoArgsConstructor
+@Table(name = "chama")
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 @ToString
-public class Nanotek {
+public class Chama {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,6 +22,4 @@ public class Nanotek {
     private String description;
     private String price;
     private String qty;
-
 }
-
