@@ -2,22 +2,20 @@ package com.example.glitchbusters.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+
 @Entity
-@Table(name = "nanotek")
-@NoArgsConstructor
+@Table(name = "msigaming")
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 @ToString
-public class Nanotek {
+public class MsiGaming {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int  id;
-
+    private int id;
     private String name;
     private String description;
-    private String price;
-    private String qty;
-
+    private double price;
 }
-
